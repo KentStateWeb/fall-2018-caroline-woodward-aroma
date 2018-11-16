@@ -1,11 +1,205 @@
 body {
   max-width: 1000px;
   padding: 1em;
-  font-family: Helvetica, Arial, sans-serif;
+  margin: auto;
 }
 
-div, section, main, aside, header, footer {
-  border: 1px solid lightgray;
-  padding: .5em;
-  margin-bottom: 1em;
+}
+.logo img{
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   /* logo is not centering*/
+   width: 50%;
+}
+
+/* nav */
+nav ul{
+  list-style-type: none;
+  padding-left:0;
+  font-family: 'linotype-sabon', serif;
+  text-decoration: none;
+  display:flex;
+  justify-content:space-around;
+  font-size:1.5em;
+    /*too much space under and around logo*/
+}
+
+nav ul a{
+    color:rgb(86, 51, 44);
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    color: rgb(213, 191, 157);
+}
+/*global styles*/
+p{
+font-family: 'omnes-pro', sans-serif;
+font-weight: 400;
+color:rgb(101, 112, 131);
+max-width:80%;
+font-size:1.2em;
+margin:auto;
+padding-bottom: 3em;
+}
+
+h1{
+  font-family: 'linotype-sabon', serif;
+  color:rgb(86, 51, 44);
+  font-weight: 400;
+}
+
+img{
+  max-width:100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+address{
+  font-family: 'omnes-pro', sans-serif;
+  color:rgb(86, 51, 44);
+  font-weight: 400;
+  /*turn off italics*/
+}
+
+/* footer */
+
+footer{
+  background-color:rgba(211, 209, 193, .2);
+  text-align: center;
+  color:rgb(86, 51, 44); /*color is not working*/
+  font-size:.8em;
+  padding:3em;
+}
+
+.place{
+  font-family: 'linotype-sabon', serif;
+  font-weight: 400;
+}
+
+/*home page*/
+.indoor{
+  display:block;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 3em;
+  /*add space here between paragraphs*/
+}
+.home {
+  padding-top: 1em;
+}
+
+.kent{
+  display:block;
+  background-color:rgba(211, 209, 193, .3);
+  padding:3em;
+  margin-top: -3em;
+}
+.columbus{
+  display:block;
+  background-color:rgba(211, 209, 193, .6);
+  padding:3em;
+}
+
+.number{
+  color:rgb(86, 51, 44);
+  font-weight:400;
+}
+
+h1.hours{
+  color:rgb(101, 112, 131);
+}
+
+p.hoo{
+  max-width:100%;
+}
+
+.loc{
+  font-weight: 400;
+  font-style: italic;
+}
+
+.time{
+  font-weight: 600;
+}
+
+/*about*/
+
+video{
+  max-width:100%;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+
+.awards{
+  background-color:rgb(101, 112, 131);
+  padding:2em;
+  margin-top: -3em;
+  /* center ul*/
+}
+
+.awards h1{
+  color:white;
+}
+
+.awards ul{
+  color:white;
+  font-family: 'omnes-pro', sans-serif;
+}
+
+/*roasting*/
+
+.beans{
+  max-width: 80%;
+  /*center this image*/
+}
+
+.smaller h1{
+font-size: 2em;
+}
+
+.smaller{
+  padding-left: 6em;
+}
+
+.smaller p{
+  color:rgb(86, 51, 44);
+  font-weight:400;
+  /*move text to the left*/
+}
+
+.art{
+  background-color: rgb(213, 191, 157);
+  color:white;
+  padding:1.5em;
+  padding-left: 6em;
+}
+.art h1{
+  color:white;
+  font-size: 2em;
+}
+
+.art h2{
+  font-weight:500;
+  font-family: 'omnes-pro', sans-serif;
+  font-style: italic;
+  font-size:1em;
+}
+
+.art ol{
+  font-family: 'omnes-pro', sans-serif;
+  margin-left: -1em;
+}
+
+/*menu*/
+
+/*events*/
+
+.tasting h1{
+  color:rgb(101, 112, 131);
+}
+
+.sat{
+  font-style: italic;
 }

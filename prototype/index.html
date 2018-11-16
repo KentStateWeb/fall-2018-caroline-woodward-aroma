@@ -5,36 +5,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title Goes Here</title>
+    <title>Home Page</title>
     <meta name="description" content="Home">
+  <link rel="stylesheet" href="https://use.typekit.net/ldc7aml.css"/>
   </head>
   <body>
       <header>
-        <a href="index.html"> <img src="Photos/aroma.svg" alt="logo" style="width:100px;height:100px;border:0"> </a>
+        <a class="logo" href="index.html"> <img src="Photos/aroma.svg" alt="logo" style="width:450px;height:450px;border:0"> </a>
         <nav>
           <ul>
-            <li> <a href="about.html"> About </a> </li>
-            <li> <a href="roasting.html"> Roasting </a></li>
-            <li> <a href="menu.html"> Menu </a></li>
-            <li> <a href="events.html"> Events </a> </li>
+            <li> <a href="index.html"> home </a> </li>
+            <li> <a href="about.html"> about </a> </li>
+            <li> <a href="roasting.html"> roasting </a></li>
+            <li> <a href="menu.html"> menu </a></li>
+            <li> <a href="events.html"> events </a> </li>
           </ul>
         </nav>
        </header>
        <main>
        <img src="Photos/homepage.jpg" alt= "coffee shop image">
-       <p> AROMA Coffee & Tea is proud to be locally owned and operated serving award-winning, fresh, quality-focused specialty coffee and tea. Wholesale clients interested in leveraging our experience and quality, fresh product to upgrade their coffee or tea programs, please click on our wholesale link. <span> We offer indoor & outdoor seating, as well as a drive thru window for your convenience. We also provide free Wifi inside. </span> </p>
-       <h1> Kent </h1>
-           <address>6110 Horning Rd., Kent, OH 44240 </address>
-             <p> (330) 672-3031 </p>
-         <h1> Columbus </h1>
-             <address>5883 High St. Columbus, OH 43085 </address>
-             <p>(330) 854-8583 </p>
-           <h2> hours of opperation </h2>
-           <p> (same for both locations) Monday - Friday 6:00AM - 10:30PM Saturday 7:00AM - 3:00PM Sunday :00AM - 3:00PM </p>
+       <p class="home"> AROMA Coffee & Tea is proud to be locally owned and operated serving award-winning, fresh, quality-focused specialty coffee and tea. Wholesale clients interested in leveraging our experience and quality, fresh product to upgrade their coffee or tea programs, please click on our wholesale link. <span class="indoor"> <br> We offer indoor & outdoor seating, as well as a drive thru window for your convenience. We also provide free Wifi inside. </span> </p>
+      <div class="kent"> <h1> Kent </h1>
+           <address>6110 Horning Rd., <br> Kent, OH 44240 </address>
+             <p> <span class="number"> phone: (330) 672-3031 </span> </p> </div>
+         <div class="columbus"> <h1> Columbus </h1>
+             <address>5883 High St. <br> Columbus, OH 43085 </address>
+            <br> <p> <span class="number"> phone: (330) 854-8583 </span> </p> </div>
+           <h1 class="hours"> hours of opperation </h1>
+           <p class="hoo"> <span class="loc">(same for both locations)</span>
+          <br>
+          <br> <span class="time"> Monday - Friday </span>
+          <br> 6:00AM - 10:30PM
+          <br> <span class="time"> Saturday </span>
+          <br> 7:00AM - 3:00PM
+          <br> <span class="time"> Sunday  </span>
+          <br>  8:00AM - 3:00PM  </p>
            <video autoplay loop width="320" height="240"> <source src="Photos/steam.mp4" type="video/mp4"> </video>
           </main>
           <footer>
-            <p> hours of operation  (same for both locations) Monday - Friday  6:00AM - 10:30PM Saturday 7:00AM - 3:00PM Sunday 8:00AM - 3:00PM Kent 6110 Horning Rd., Kent, OH 44240 Phone:  (330) 672-3031 Columbus 5883 High St.Columbus, OH 43085 Phone: (330) 854-8583 </p>
+            <p> <span class="place"> hours of operation </span> <span class="loc"> (same for both locations) </span>
+            <br> <span class="time"> Monday - Friday </span> 6:00AM - 10:30PM <span class="time"> Saturday </span>  7:00AM - 3:00PM <span class="time"> Sunday </span> 8:00AM - 3:00PM
+            <br>
+            <br> <span class= "place"> Kent </span>
+            <br> 6110 Horning Rd., Kent, OH 44240
+            <br> Phone:  (330) 672-3031
+            <br>
+            <br> <span class= "place"> Columbus </span>
+            <br> 5883 High St.Columbus, OH 43085
+            <br> Phone: (330) 854-8583  </p>
           </footer>
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
   </body>
