@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title Goes Here</title>
+    <title>Menu</title>
     <meta name="description" content="Page Description Goes Here">
     <link rel="stylesheet" href="https://use.typekit.net/ldc7aml.css"/>
   </head>
   <body>
        <header>
-               <a class="logo" href="index.html"> <img src="Photos/aroma.svg" alt="logo" style="width:450px;height:450px;border:0"> </a>
+               <a class="logo" href="index.html"> <img src="Photos/aroma.svg" alt="logo"> </a>
          <nav>
            <ul>
              <li> <a href="index.html"> home </a> </li>
@@ -23,20 +23,22 @@
        </header>
      <main>
        <img src="Photos/menu.jpg" alt= "latte">
-       <ul>
-         <li> <a href="#"> coffee </a> </li>
-         <li> <a href="#"> espresso </a></li>
-         <li> <a href="#"> tea </a></li>
-         <li> <a href="#"> baked goods </a> </li>
+       <div class= "menu">
+       <ul class="top">
+         <li> <a href="#coffee"> coffee </a> </li>
+         <li> <a href="#espresso"> espresso </a></li>
+         <li> <a href="#tea"> tea </a></li>
+         <li> <a href="#goods"> baked goods </a> </li>
        </ul>
-       <h1> coffee </h1>
+     </div>
+       <h4 id="coffee"> coffee </h4>
        <p> We proudly serve the rarest coffee & espresso beans, single in origin & roasted right here in Kent. Our house blend is a Sumatra dark blend. </p>
        <ul>
          <li> Hot Coffee 2.00 2.15 2.25 </li>
          <li> Pour Over 2.50 3.00 3.25 </li>
          <li> Iced Coffee  2.25 2.50 2.85 </li>
        </ul>
-       <h1> espresso and more </h1>
+       <h4 id="espresso"> espresso and more </h4>
        <ul>
          <li> Espresso 2.25 2.50 2.85 </li>
          <li> Café Americano 2.50 2.75 3.25 </li>
@@ -49,7 +51,7 @@
         <img src="Photos/chocolatelatte.jpg" alt= "chocolate latte">
         <img src="Photos/grounds.jpg" alt= "grounds">
         <img src="Photos/bluemug.jpg" alt= "blue mug coffee">
-        <h1> tea </h1>
+        <h4 id="tea"> tea </h4>
         <p> English Breakfast, Moto Chai, Moroccan Mint Green Tea, Decaf Ginger Tumeric, Gunpowder Green tea, Earl Grey </p>
         <ul>
           <li> Iced or Hot 2.25 2.50 2.75 </li>
@@ -58,7 +60,7 @@
         <img src="Photos/crossont.jpg" alt= "crossont">
         <img src="Photos/tea.jpg" alt= "loose tea">
         <img src="Photos/coffeecake.jpg" alt= "coffee cake and latte">
-        <h1> baked goods </h1>
+        <h4 id="goods"> baked goods </h4>
         <ul>
           <li> Muffin  2.95 <i> Blueberry, Bran, Lemon Poppy </i> </li>
           <li> Belgium Style Waffle 3.95 </li>
@@ -68,19 +70,32 @@
           <li> Zingerman’s Coffee Cake 4.25 </li>
           <li> Gourmet Cookie 2.45 <i> Chocolate Chip, Oatmeal Rasin, Double Chocolate </i> </li>
         </ul>
+        <a href="top">Back to Top</a>
      </main>
        <footer>
-         <p> <span class="place"> hours of operation </span> <span class="loc"> (same for both locations) </span>
-         <br> <span class="time"> Monday - Friday </span> 6:00AM - 10:30PM <span class="time"> Saturday </span>  7:00AM - 3:00PM <span class="time"> Sunday </span> 8:00AM - 3:00PM
-         <br>
-         <br> <span class= "place"> Kent </span>
-         <br> 6110 Horning Rd., Kent, OH 44240
-         <br> Phone:  (330) 672-3031
-         <br>
-         <br> <span class= "place"> Columbus </span>
-         <br> 5883 High St.Columbus, OH 43085
-         <br> Phone: (330) 854-8583  </p>
+         <div class="place">
+           <h3> hours of operation <span class="loc"> (same for both locations) </span></h3>
+           <p><span class="time"> Monday - Friday </span>
+           6:00AM - 10:30PM <span class="time"> Saturday </span>
+           7:00AM - 3:00PM <span class="time"> Sunday </span>
+           8:00AM - 3:00PM
+           </p>
+         </div>
+
+         <div class="place">
+
+         <h3>Kent</h3>
+         <p>6110 Horning Rd., Kent, OH 44240<br>
+         Phone:  (330) 672-3031</p>
+         </div>
+
+         <div class="place">
+         <h3> Columbus </h3>
+         <p>5883 High St.Columbus, OH 43085<br/>
+         Phone: (330) 854-8583  </p>
+       </div>
        </footer>
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </body>
 </html>

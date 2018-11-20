@@ -4,12 +4,10 @@ body {
   margin: auto;
 }
 
-}
-.logo img{
+.logo {
   display: block;
    margin-left: auto;
    margin-right: auto;
-   /* logo is not centering*/
    width: 50%;
 }
 
@@ -22,7 +20,6 @@ nav ul{
   display:flex;
   justify-content:space-around;
   font-size:1.5em;
-    /*too much space under and around logo*/
 }
 
 nav ul a{
@@ -60,7 +57,7 @@ address{
   font-family: 'omnes-pro', sans-serif;
   color:rgb(86, 51, 44);
   font-weight: 400;
-  /*turn off italics*/
+  font-style:normal;
 }
 
 /* footer */
@@ -68,14 +65,24 @@ address{
 footer{
   background-color:rgba(211, 209, 193, .2);
   text-align: center;
-  color:rgb(86, 51, 44); /*color is not working*/
   font-size:.8em;
   padding:3em;
 }
 
-.place{
+@media screen and (min-width:975px){
+  footer{
+    display:flex;
+  }}
+
+footer p{
+  color:rgb(86, 51, 44);
+  padding-bottom: 1em;
+}
+
+.place h3{
   font-family: 'linotype-sabon', serif;
   font-weight: 400;
+  color:rgb(86, 51, 44);
 }
 
 /*home page*/
@@ -84,7 +91,6 @@ footer{
   font-weight: 400;
   font-style: italic;
   padding-bottom: 3em;
-  /*add space here between paragraphs*/
 }
 .home {
   padding-top: 1em;
@@ -105,6 +111,7 @@ footer{
 .number{
   color:rgb(86, 51, 44);
   font-weight:400;
+  max-width:100%;
 }
 
 h1.hours{
@@ -136,8 +143,13 @@ video{
   background-color:rgb(101, 112, 131);
   padding:2em;
   margin-top: -3em;
-  /* center ul*/
 }
+
+.center{
+  max-width:60%;
+  margin: auto;
+}
+
 
 .awards h1{
   color:white;
@@ -152,7 +164,9 @@ video{
 
 .beans{
   max-width: 80%;
-  /*center this image*/
+  margin:auto;
+  display:block;
+  margin-bottom: 2em;
 }
 
 .smaller h1{
@@ -161,12 +175,13 @@ font-size: 2em;
 
 .smaller{
   padding-left: 6em;
+  padding-right:6em;
 }
 
 .smaller p{
   color:rgb(86, 51, 44);
   font-weight:400;
-  /*move text to the left*/
+  max-width:100%;
 }
 
 .art{
@@ -174,6 +189,7 @@ font-size: 2em;
   color:white;
   padding:1.5em;
   padding-left: 6em;
+  padding-right:6em;
 }
 .art h1{
   color:white;
@@ -193,6 +209,26 @@ font-size: 2em;
 }
 
 /*menu*/
+
+.top{
+  padding-left:0;
+  display:flex;
+  justify-content:space-around;
+  font-family: 'linotype-sabon', serif;
+  color:rgb(101, 112, 131);
+}
+
+.menu li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h4{
+  font-family: 'linotype-sabon', serif;
+  font-weight: 400;
+  color:rgb(101, 112, 131);
+  font-size: 2em;
+}
 
 /*events*/
 
