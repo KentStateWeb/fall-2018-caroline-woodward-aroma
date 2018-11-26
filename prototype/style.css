@@ -1,8 +1,4 @@
-body {
-  max-width: 1000px;
-  padding: 1em;
-  margin: auto;
-}
+
 
 .logo {
   display: block;
@@ -30,7 +26,19 @@ nav ul a{
 nav ul a:hover{
     color: rgb(213, 191, 157);
 }
+
+.active{
+  font-weight:700;
+}
+
 /*global styles*/
+
+body {
+  max-width: 1000px;
+  padding: 1em;
+  margin: auto;
+}
+
 p{
 font-family: 'omnes-pro', sans-serif;
 font-weight: 400;
@@ -96,6 +104,21 @@ footer p{
   padding-top: 1em;
 }
 
+@media screen and (min-width:975px){
+  .kent{
+    display:flex;
+    /*flex the locations*/
+  }
+}
+  /*flex the video*/
+.steam{
+  display:flex;
+  padding-left: 3em;
+}
+
+.opp{
+  padding-left: 3em;
+}
 .kent{
   display:block;
   background-color:rgba(211, 209, 193, .3);
@@ -106,12 +129,6 @@ footer p{
   display:block;
   background-color:rgba(211, 209, 193, .6);
   padding:3em;
-}
-
-.number{
-  color:rgb(86, 51, 44);
-  font-weight:400;
-  max-width:100%;
 }
 
 h1.hours{
@@ -130,6 +147,10 @@ p.hoo{
 .time{
   font-weight: 600;
 }
+.steam video{
+  display:flex; /* view video next to hours*/
+}
+
 
 /*about*/
 
@@ -210,32 +231,55 @@ font-size: 2em;
 
 /*menu*/
 
+@media screen and (min-width:600px){
+
+.coffeeimages{
+  display:flex;
+  align-items:flex-start;
+}
+
+.coffeeimages img{
+  max-width: 100%;
+  width:33%;
+}}
+
+.coffee{
+  max-width: 100%;
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+.menulist li{
+  list-style-type: none;
+  margin-left: -2.5em;
+  font-family: 'omnes-pro', sans-serif;
+  color:rgb(101, 112, 131);
+  font-weight:600;
+}
+
 .top{
   padding-left:0;
   display:flex;
   justify-content:space-around;
   font-family: 'linotype-sabon', serif;
-  color:rgb(101, 112, 131);
+  list-style-type: none;
 }
 
-.menu li{
+.price{
+  font-weight:400;
+}
+
+.menu li a{
     text-decoration: none;
-    list-style-type: none;
+    color:rgb(101, 112, 131);
 }
 
+.menu li a:hover{
+  border-bottom: 2px solid rgb(101, 112, 131);
+
+}
 h4{
   font-family: 'linotype-sabon', serif;
   font-weight: 400;
   color:rgb(101, 112, 131);
   font-size: 2em;
-}
-
-/*events*/
-
-.tasting h1{
-  color:rgb(101, 112, 131);
-}
-
-.sat{
-  font-style: italic;
 }
