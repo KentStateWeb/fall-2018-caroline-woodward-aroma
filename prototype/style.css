@@ -1,10 +1,14 @@
-
+header{
+border-top: 15px solid rgb(211, 209, 193);
+}
+/* header border is not showing up high enough*/
 
 .logo {
   display: block;
    margin-left: auto;
    margin-right: auto;
    width: 50%;
+   padding-top: 1.5em;
 }
 
 /* nav */
@@ -24,7 +28,7 @@ nav ul a{
 }
 
 nav ul a:hover{
-    color: rgb(213, 191, 157);
+    color: rgb(211, 209, 193);
 }
 
 .active{
@@ -35,7 +39,7 @@ nav ul a:hover{
 
 body {
   max-width: 1000px;
-  padding: 1em;
+  padding: 0em;
   margin: auto;
 }
 
@@ -59,6 +63,10 @@ img{
   max-width:100%;
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+video{
+  max-width:100%;
 }
 
 address{
@@ -98,37 +106,38 @@ footer p{
   display:block;
   font-weight: 400;
   font-style: italic;
-  padding-bottom: 3em;
 }
 .home {
   padding-top: 1em;
 }
 
-@media screen and (min-width:975px){
-  .kent{
+.steam{
+  flex:1;
+  width:100%;
+}
+@media screen and (min-width:650px){
+  .locations,.vidflex{
     display:flex;
-    /*flex the locations*/
+  }
+  .steam{
+    width:50%;
   }
 }
-  /*flex the video*/
-.steam{
-  display:flex;
-  padding-left: 3em;
-}
-
 .opp{
   padding-left: 3em;
+  flex:1;
 }
 .kent{
   display:block;
   background-color:rgba(211, 209, 193, .3);
   padding:3em;
-  margin-top: -3em;
+  flex:1;
 }
 .columbus{
   display:block;
   background-color:rgba(211, 209, 193, .6);
   padding:3em;
+  flex:1;
 }
 
 h1.hours{
@@ -147,10 +156,6 @@ p.hoo{
 .time{
   font-weight: 600;
 }
-.steam video{
-  display:flex; /* view video next to hours*/
-}
-
 
 /*about*/
 
@@ -167,9 +172,13 @@ video{
 }
 
 .center{
-  max-width:60%;
   margin: auto;
 }
+
+@media screen and (min-width:975px){
+  .center{
+    max-width:60%;
+  }}
 
 
 .awards h1{
@@ -195,8 +204,8 @@ font-size: 2em;
 }
 
 .smaller{
-  padding-left: 6em;
-  padding-right:6em;
+  padding-left: 10%;
+  padding-right:10%;
 }
 
 .smaller p{
@@ -209,15 +218,15 @@ font-size: 2em;
   background-color: rgb(213, 191, 157);
   color:white;
   padding:1.5em;
-  padding-left: 6em;
-  padding-right:6em;
+  padding-left: 10%;
+  padding-right:10%;
 }
 .art h1{
   color:white;
   font-size: 2em;
 }
 
-.art h2{
+h2{
   font-weight:500;
   font-family: 'omnes-pro', sans-serif;
   font-style: italic;
@@ -282,4 +291,23 @@ h4{
   font-weight: 400;
   color:rgb(101, 112, 131);
   font-size: 2em;
+}
+
+/* pattern lib */
+h5{
+  font-family: 'linotype-sabon', serif;
+  font-weight:700;
+  font-size:2em;
+  color:rgb(101, 112, 131);
+}
+
+h6{
+  font-family: 'linotype-sabon', serif;
+  font-weight:700;
+  color:rgb(101, 112, 131);
+  font-size:1em;
+}
+
+.font{
+  font-family: 'linotype-sabon', serif;
 }
