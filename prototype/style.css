@@ -192,6 +192,11 @@ video{
 
 /*roasting*/
 
+.roaster{
+  max-width:1000px;
+  margin:auto 0;
+}
+
 .beans{
   max-width: 80%;
   margin:auto;
@@ -215,7 +220,7 @@ font-size: 2em;
 }
 
 .art{
-  background-color: rgb(213, 191, 157);
+  background-color: rgb(203, 177, 148);
   color:white;
   padding:1.5em;
   padding-left: 10%;
